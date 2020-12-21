@@ -1,0 +1,61 @@
+body{
+    margin-top: 20vh;
+    background-color: whitesmoke;
+}
+section {
+    text-align: center;
+    min-width: 300px;
+    max-width: 20%;
+    margin: auto;
+}
+input {
+    border: solid 1px #dddddd;
+    background-color: darkorchid;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    padding: 1em;
+}
+input:hover{
+    background-color: #86f774;
+    color:black;
+}
+
+/*
+#btnRecord {
+    border: solid 1px #dddddd;
+    background-color: darkorchid;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
+#btnSubmit:hover {
+    background-color: #86f774;
+    color:black;
+}
+#txtPassword {
+    border: solid 1px #dddddd;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#txtPasswordReg {
+    border: solid 1px #dddddd;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#txtUsername {
+    border: solid 1px #dddddd;
+    width: 100%;
+    box-sizing: border-box;
+}
+*/
+h1{
+    text-align: center;
+}
+

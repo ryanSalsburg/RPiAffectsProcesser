@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Effect Studio</title>
+    <meta name="author" content="Zachary, Emma, Ryan">
+    <meta name="description" content="Guitar effects modifier">
+    <link rel="stylesheet" href="/static/custom.css" type="text/css">
+</head>
+<header>
+    <h1>Effect Studio</h1>
+</header>
+
+<body>
+    <section id='effects'>
+        <p id='audioPara'>
+            Input:
+            <audio controls>
+                <source src='/static/{{x}}' type="audio/wav">
+            </audio>
+        </p>
+        <p id='audioPara'>
+            Output:
+            <audio controls>
+                <source src="/static/{{out}}" type="audio/wav">
+            </audio>
+        </p>
+        <form action="/record" method="post">
+            <p>
+                <input type='submit' name='btnRecord' id='btnRecord' value="Record" {{test1}}>
+            </p>
+        </form>
+
+        <form action="/end" method="post">
+            <p>
+                <input type='submit' name='btnEnd' id='btnEnd' value="End Recording" {{test2}}>
+            </p>
+        </form>
+
+        <form action="/effect1" method="post">
+            <p>
+                <input type='submit' name='btnEffect1' id='btnEffect1' value="Distortion">
+            </p>
+        </form>
+
+        <form action="/effect2" method="post">
+            <p>
+                <input type='submit' name='btnEffect2' id='btnEffect2' value="Boost">
+            </p>
+        </form>
+
+        <form action="/effect3" method="post">
+            <p>
+                <input type='submit' name='btnEffect3' id='btnEffect3' value="Tremelo">
+            </p>
+        </form>
+
+        <form action="/effect4" method="post">
+            <p>
+                <input type='submit' name='btnEffect4' id='btnEffect4' value="Pitch Shift">
+            </p>
+        </form>
+    </section>
+</body>
+</html>
